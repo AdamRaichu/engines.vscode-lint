@@ -1,0 +1,5 @@
+{
+  "apiMappings": {
+    "require('vscode').TerminalLocation": 64
+  }
+}

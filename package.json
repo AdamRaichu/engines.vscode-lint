@@ -1,0 +1,34 @@
+{
+  "name": "engines.vscode-lint",
+  "version": "0.0.1",
+  "description": "Discover the minimum version of vscode your extension needs to run (based on parts of the API used).",
+  "main": "./src/index.js",
+  "bin": {
+    "engines.vscode-lint": "src/cli.js"
+  },
+  "scripts": {
+    "test": "npm link && engines.vscode-lint --help",
+    "test-config-reset": "npm link && engines.vscode-lint config reset --confirm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamRaichu/engines.vscode-lint.git"
+  },
+  "keywords": [
+    "vscode",
+    "lint"
+  ],
+  "author": "AdamRaichu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamRaichu/engines.vscode-lint/issues"
+  },
+  "homepage": "https://github.com/AdamRaichu/engines.vscode-lint#readme",
+  "dependencies": {
+    "minimist-lite": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "@types/vscode": "^1.75.1"
+  }
+}

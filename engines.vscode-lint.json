@@ -1,0 +1,7 @@
+{
+  "mappings": {
+    "vscode": "__lint_DEFAULT_module_UNGUESSABLE__",
+    "require(\"vscode\")": "__lint_DEFAULT_module_UNGUESSABLE__",
+    "require(`vscode`)": "__lint_DEFAULT_module_UNGUESSABLE__"
+  }
+}
