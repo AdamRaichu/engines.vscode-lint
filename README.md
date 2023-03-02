@@ -2,12 +2,15 @@
 
 An npm package which tells you what minimum version of vscode your extension needs to run (based on parts of the API used).
 
+![Latest Supported VS Code API Version](https://img.shields.io/badge/Latest%20Supported%20VS%20Code%20API%20Version-1.65.0-darkblue)
+
 ## Installation
 
 Add this as a devDependency to your project with the following command.
+This needs to be globally installed because it contributes commands to the terminal.
 
 ```bash
-npm install --save-dev engines.vscode-lint
+npm install engines.vscode-lint --save-dev -g
 ```
 
 ## Usage
