@@ -1,5 +1,8 @@
 {
   "apiMappings": {
-    "require('vscode').TerminalLocation": 64
+    "require('vscode').TerminalLocation": 64,
+    "require('vscode').languages.createLanguageStatusItem": 65,
+    "require('vscode').languages.registerInlayHintsProvider": 65,
+    "require('vscode').workspace.InlayHintsProvider": 65
   }
 }

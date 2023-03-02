@@ -1,14 +1,15 @@
 {
   "name": "engines.vscode-lint",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Discover the minimum version of vscode your extension needs to run (based on parts of the API used).",
   "main": "./src/index.js",
   "bin": {
     "engines.vscode-lint": "src/cli.js"
   },
   "scripts": {
-    "test": "npm link && engines.vscode-lint --help",
-    "test-config-reset": "npm link && engines.vscode-lint config reset --confirm"
+    "test": "npm link && engines.vscode-lint lint file ./test/file.js",
+    "test-config-reset": "npm link && engines.vscode-lint config reset --confirm",
+    "test-without-alias": "npm link && engines.vscode-lint lint file ./test/file.js --config-file-path ./test/useDefaultAlias-false.json"
   },
   "repository": {
     "type": "git",

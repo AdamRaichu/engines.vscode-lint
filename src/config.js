@@ -7,7 +7,8 @@ const configFilePath = argv["config-file-path"] || "engines.vscode-lint.json";
 
 module.exports = {
   default: {
-    mappings: { 'require("vscode")': "__lint_DEFAULT_module_UNGUESSABLE__", "require(`vscode`)": "__lint_DEFAULT_module_UNGUESSABLE__", vscode: "__lint_DEFAULT_module_UNGUESSABLE__" },
+    mappings: {},
+    useDefaultAlias: true,
   },
   get get() {
     if (fs.existsSync(configFilePath)) {
