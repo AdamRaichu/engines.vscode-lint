@@ -8,7 +8,7 @@ const fs = require("fs");
 // Get config file
 
 if (argv._[0] === "config") {
-  const configFilePath = argv["config-file-path"] || "engines.vscode-lint.json";
+  const configFilePath = new URL(argv["config-file-path"] || "engines.vscode-lint.json");
   if (argv._[1] === "reset") {
     if (argv.help) {
       console.log("This command will reset your configuration file to the default settings.");
