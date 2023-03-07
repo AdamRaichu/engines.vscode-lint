@@ -1,6 +1,6 @@
 {
   "name": "engines.vscode-lint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Discover the minimum version of vscode your extension needs to run (based on parts of the API used).",
   "main": "./src/index.js",
   "bin": {
@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/AdamRaichu/engines.vscode-lint#readme",
   "dependencies": {
-    "minimist-lite": "^2.2.1"
+    "minimist-lite": "^2.2.1",
+    "path-sanitizer": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.14.1",

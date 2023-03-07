@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
 const argv = require("minimist-lite")(process.argv.slice(2));
+const sanitize = require("path-sanitizer");
 const CONFIG = require("./config.js");
 const lintFile = require("./lint/file.js");
 const fs = require("fs");
@@ -8,7 +9,7 @@ const fs = require("fs");
 // Get config file
 
 if (argv._[0] === "config") {
-  const configFilePath = new URL(argv["config-file-path"] || "engines.vscode-lint.json");
+  const configFilePath = sanitize(argv["config-file-path"] || "engines.vscode-lint.json");
   if (argv._[1] === "reset") {
     if (argv.help) {
       console.log("This command will reset your configuration file to the default settings.");
