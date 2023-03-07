@@ -1,6 +1,6 @@
 {
   "name": "engines.vscode-lint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Discover the minimum version of vscode your extension needs to run (based on parts of the API used).",
   "main": "./src/index.js",
   "bin": {

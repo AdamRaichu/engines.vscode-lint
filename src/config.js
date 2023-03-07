@@ -1,9 +1,10 @@
 "use strict";
 
 const argv = require("minimist-lite")(process.argv.slice(2));
+const sanitize = require("path-sanitizer");
 const fs = require("fs");
 
-const configFilePath = argv["config-file-path"] || "engines.vscode-lint.json";
+const configFilePath = sanitize(argv["config-file-path"] || "engines.vscode-lint.json");
 
 module.exports = {
   default: {

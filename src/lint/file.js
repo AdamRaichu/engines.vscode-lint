@@ -1,10 +1,12 @@
 const fs = require("fs");
+const sanitize = require("path-sanitizer");
 const CONFIG = require("../config.js");
 const apis = require("../apis.json");
 
 const config = CONFIG.get;
 
 module.exports = function (filePath) {
+  filePath = sanitize(filePath);
   var fileData = fs.readFileSync(filePath, "utf-8");
 
   // fill in user and default mappings
